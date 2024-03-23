@@ -1,0 +1,38 @@
+
+# Arquivos locais do Terraform
+**/.terraform/*
+
+# Arquivos de estado do Terraform
+*.tfstate
+*.tfstate.*
+
+# Arquivo de bloqueio
+.terraform.lock.hcl
+
+# Arquivos de log
+crash.log
+
+# Arquivos de variáveis de ambiente que podem ser usados para configurar o Terraform
+*.tfvars
+*.tfvars.json
+
+# Arquivos de configuração do override
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Arquivos de saída JSON do plano
+*.tfplan
+*.tfplan.json
+
+# Ignore todos os arquivos .tfvars que possam conter informações sensíveis, tais como
+# senha, chaves privadas, e outros segredos. Deve-se usar mecanismos de segurança
+# para gerenciar esses valores, como o Vault da HashiCorp.
+#
+# Exemplo: 
+# *.auto.tfvars
+
+# Ignore a configuração CLI do Terraform
+.terraformrc
+terraform.rc
